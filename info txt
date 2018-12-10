@@ -85,9 +85,16 @@ Git
      git rm -r myfolder
      git commit -m "myfolder is deleted"
 
-
+{
  Сохранение настроек в Gist
-     F1   sync:   update  download и тп
+     F1   sync:    update  download и тп
 
      http://shanalikhan.github.io/2015/12/15/Visual-Studio-Code-Sync-Settings.html
      https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync  - плагин
+
+Json  комментарии  включить
+http://qaru.site/questions/14849616/in-vs-code-disable-error-comments-are-not-permitted-in-json
+}
+
+переход по скобкам
+ CTRL+SHIFT+\
