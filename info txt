@@ -87,5 +87,7 @@ Git
 
 
  Сохранение настроек в Gist
+     F1   sync:   update  download и тп
+
      http://shanalikhan.github.io/2015/12/15/Visual-Studio-Code-Sync-Settings.html
      https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync  - плагин
