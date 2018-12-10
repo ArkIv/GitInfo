@@ -14,8 +14,8 @@ Ctrl+Shift+P   набрать >git выбрать - инициализирова
     git push -u origin master
 
 сначала перейти в систему управления версиями слева
-сделать Commit  галка - Принять изменения
-потом  ввести в терминале эти две строки
+ сделать Commit  галка - Принять изменения
+ потом  ввести в терминале эти две строки
 
 дальнейшая работа с проектом:
 галка - Принять изменения
@@ -24,6 +24,68 @@ Ctrl+Shift+P   набрать >git выбрать - инициализирова
 
 Создание тега:  (старой версии)
 набрать и выбрать
-git tag  - Git: создать тег ->  ввести имя тега и анотацию к тегу
+git tag  - Git: создать тег ->  ввести имя тега и анотацию к тегу  (git tag <tagname> -a)
 Commit ??
-git tag  - Git: отправить с тегами
+git tag  - Git: отправить с тегами  (git push origin --tags)
+
+
+http://qaru.site/questions/50587/how-to-use-visual-studio-code-as-default-editor-for-git
+Git  config
+в ком строке набрать  git config --global core.editor "code --wait"
+это позволит редактировать файл настроек Git
+потом в ком строке - git config --global -e
+CMD - будет ждать завершения редактирования gitconfig
+
+параметр  core.autocrlf=input  должен разрешить для Git  LF вместо CRLF  попробовать надо
+
+пока не знаю что это но надо разобраться к верхнему сообщению это
+http://qaru.site/questions/1220203/multiline-git-commit-message-in-vscode
+Требуется выравнивание строки по умолчанию VS Code:
+ "files.eol": "\n"
+
+
+
+запуск браузера и использование gulp
+http://qaru.site/questions/46746/how-to-view-my-html-code-in-browser-with-visual-studio-code
+
+
+Ctrl+K  Ctrl+0  Свернуть версии
+Ctrl+K Ctrl+J развернуть все
+Ctrl+K Ctrl+[n]  свернуть по номеру уровня
+
+Code Outline  плагин - дерево функций и тп  теперь встроено Outline (структура) view правой мышей на эксплорер...
+
+
+Включение ES6 Js
+http://qaru.site/questions/70937/is-there-a-way-to-turn-on-es6es7-syntax-support-in-vscode
+
+Закладки
+https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks
+
+убрать карту
+http://qaru.site/questions/83257/any-way-to-disable-or-hide-visual-studio-codes-scrollbarminimap
+
+EJS как HTML для Node JS
+http://qaru.site/questions/103186/is-there-a-way-to-make-visual-studio-code-recognize-html-syntax-in-ejs-files
+
+Git частый запрос учетных данных  - не сталкивался еще
+http://qaru.site/questions/103242/visual-studio-code-always-asking-for-git-credentials
+
+Git 
+Удаляет файл или папку из репозитория
+со всей историей т.е. наглухо
+кстати из источника он удалится тоже
+
+ git filter-branch --tree-filter "rm -rf PATH" HEAD
+  где PATH - это относительный путь до файла или папки.
+  После этого выполните (чтобы перезаписать историю изменений):
+ git push origin master --force
+
+  ну а это вероятно оставит в истории
+     git rm -r myfolder
+     git commit -m "myfolder is deleted"
+
+
+ Сохранение настроек в Gist
+     http://shanalikhan.github.io/2015/12/15/Visual-Studio-Code-Sync-Settings.html
+     https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync  - плагин
